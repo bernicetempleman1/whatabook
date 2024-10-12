@@ -1,0 +1,56 @@
+{
+    "book": [
+      {
+        "bookId": "ISBN-9781517295102",
+        "title": "The Design of Web APIs",
+        "author": "Arnaud Lauret",
+        "genre": "Technology"
+      },
+      {
+        "bookId": "ISBN-9780321826626",
+        "title": "NoSQL Distilled",
+        "author": "Pramod J. Sadalage & Martin Fowler",
+        "genre": "Technology"
+      }
+    ],
+    "customer": [
+      {
+        "customerId": "c1001",
+        "firstName": "Hermione",
+        "lastName": "Granger",
+        "wishlistitems": [
+          {
+            "bookId": "ISBN-9781517295102",
+            "title": "The Design of Web APIs",
+            "author": "Arnaud Lauret",
+            "genre": "Technology"
+          },
+          {
+            "bookId": "ISBN-9780321826626",
+            "title": "NoSQL Distilled",
+            "author": "Pramod J. Sadalage & Martin Fowler",
+            "genre": "Technology"
+          }
+        ]
+      },
+      {
+        "customerId": "c1002",
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "wishlistitems": [
+          {
+            "bookId": "ISBN-9781517295102",
+            "title": "The Design of Web APIs",
+            "author": "Arnaud Lauret",
+            "genre": "Technology"
+          },
+          {
+            "bookId": "ISBN-9780321826626",
+            "title": "NoSQL Distilled",
+            "author": "Pramod J. Sadalage & Martin Fowler",
+            "genre": "Technology"
+          }
+        ]
+      }
+    ]
+  }

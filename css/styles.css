@@ -1,0 +1,411 @@
+/*
+Author: Bernice Templeman
+Date: December 3, 2023
+File Name: style.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+body {
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for mobile viewport*/
+.mobile {
+  display: block;
+}
+
+/* Style rules to show mobile class and hide tab-desk class */
+.tab-desk, .desktop {
+  display: none;
+}
+
+/* Style  rules for header area */
+.mobile h1, .mobile h3 {
+  padding: 2%;
+  text-align: center;
+}
+
+.mobile h1 {
+  font-family: 'Emblema One';
+}
+
+.mobile h3 {
+  font-family: 'Lora', serif;
+}
+
+/* Style rules for certification list */
+.mobile ul  {
+  background-color: #E8E8E8;
+}
+
+/* Style rules for navigation area */
+nav {
+  background: navy;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: block;
+  font-size: 1.5em;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+  
+}
+
+nav li a {
+  display: block;
+  color: white;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+ol, ul {
+  padding-left: 0;
+  margin-left: 5%;
+}
+
+/* Style rules for main content */
+main {
+  padding: 2%;
+  font-family: 'Lora', serif;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+main h3 {
+  padding-top: 2%;
+}
+
+main ul {
+  list-style: square;
+  padding-left: 0;
+}
+
+.link {
+  color: navy;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.action {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.round {
+  border-radius: 6px;
+}
+
+aside {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 4px 4px 10px skyblue;
+}
+
+figure {
+  border: 4px solid navy;
+  box-shadow: 6px 6px 10px skyblue;
+  max-width: 400px;
+  margin: 2% auto;
+}
+
+figcaption {
+  padding: 2%;
+  border-top: 4px solid navy;
+}
+
+#info ul {
+  margin-left: 10%;
+
+}
+
+#contact p{
+  text-align: center;
+}
+
+.tel-link {
+  background-color: navy;
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tel-link a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Style rules for footer content */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: navy;
+  color: white;
+  padding: 1% 0%;
+}
+
+footer a {
+  color:  white;
+  text-decoration: none;
+}
+
+/* Media Query for mobile Viewport */
+@media screen and (max-width: 620px) {
+
+  /* Style rules for certification list */
+  div #list {
+    background-color: #E8E8E8;
+  }
+
+  /* Style rules for grids */
+
+  .grid, .grid3 {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #E8E8E8;
+    grid-gap: 10px;
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    background-color: #F7F5E6;
+    padding: 10px;
+  }
+
+  .grid2 div {
+    grid-template-columns: auto;
+    background-color: #F7F5E6;
+    text-align: left;
+    padding: 20px;
+  }
+
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+  }
+
+  nav li a {
+    padding: 0.5em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #E8E8E8;
+    grid-gap: 10px;
+  }
+
+  aside {
+    grid-column: 1 / span 2;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color: #F7F5E6;
+    padding: 10px;
+  }
+
+  .grid2 div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 20px;
+  }
+
+  .grid3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color: #E8E8E8;
+    padding: 10px;
+  }
+
+  .grid3 div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 20px;
+  }
+
+  /* Style rules for certification table */
+
+  table {
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+  }
+
+  .table {
+    background-color: #E8E8E8;
+  }
+
+  .table p{
+    text-align: center;
+  }
+
+   /* Style rules for micro-certification table */
+  #table2 {
+    background-color: #E8E8E8;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th, td {
+    border: 1px solid #2a1f14;
+    padding: 1%;
+  }
+
+  th {
+    background-color: #2a1f14;
+    color: #fff;
+    font-size: 1.15em;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+
+  /* Desktop Viewport: Style rules for nav area*/
+  nav li {
+    font-size: 1.5em;
+  }
+
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
+
+  nav li a:hover {
+    color: navy;
+    background-color: white;
+    opacity: 0.5;
+  }
+
+  a:hover {
+    color: green;
+    background-color: white;
+    opacity: 0.5;
+}
+
+  /* Desktop Viewport: Style rules for main content */
+  #info ul {
+    margin-left: 5%;
+  }
+
+  .grid {
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+  }
+
+  aside {
+    grid-column: 1 / span 3;
+    font-size: 2em;
+  }
+
+  .grid2 {
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+  }
+
+  .grid3 {
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+  }
+
+}
+
+/* Media  Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+
+  body {
+    background: linear-gradient(white , skyblue);
+  }
+
+  #wrapper {
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+  main {
+    background-color: white;
+  }
+
+  .grid {
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+  }
+
+  aside {
+    grid-column: 1 / span 2;
+    font-size: 3em;
+  }
+
+  .grid2 {
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+  }
+
+  .grid3 {
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+  }
+
+}
+
+/* Media Query for Print */
+@media print {
+
+  body {
+    background-color: white;
+    color: black;
+  }
+
+}

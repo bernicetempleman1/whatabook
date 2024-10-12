@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+  Student Name: Bernice Templeman
+  File Name: index.html
+  Date: 10/07/204
+-->
+<html lang="en">
+  <head>
+    <title>Portfolio: WhatABook</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/appletouch-icon.png"
+    />
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+    <style>
+      ul {
+        padding-left: 10px;
+      }
+       .cards {
+         display: flex;
+         justify-content: space-between;
+         padding: 20px;
+      }
+       .card {
+         box-shadow: 0 4px 8px 0 navy;
+         transition: 0.3s;
+         width: 100%;
+         margin: 1.99em;
+         padding: 10px;
+       }
+       .card:hover {
+         box-shadow: 16px; rgba(0, 0, 0, 0.2);
+       }
+
+       .container {
+         padding: 16px;
+       }
+       .cards {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+      .button-link {
+        display: flex;
+
+        margin: 0 auto;
+        background-color: #008cba;
+        color: white;
+        padding: 15px 32px;
+        font-size: 16px;
+        height: 25px;
+        width: 100px;
+      }
+      .button-link:hover {
+        background-color:    #04aa6d; /* Green */
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Use the header area for the website name or logo -->
+      <header>
+        <div class="tab-desk"></div>
+        <div class="mobile">
+          <h1>&#128483; Portfolio</h1>
+          <h3>Bernice Templeman</h3>
+        </div>
+      </header>
+
+      <!-- Use the nav area to add hyperlinks to other pages within the website-->
+      <nav>
+        <ul>
+          <li><a href="index.html">WhatABook </a></li>
+        </ul>
+      </nav>
+
+      <!-- Use the main area to add the main content to the webpage -->
+      <main>
+        <!-- Section for Picture, goals, accomplishments, experience, education -->
+        <h2>WEB 335 WhatABook Project</h2>
+
+        <div class="centered">
+          <section class="cards">
+            <article class="card">
+              <img style="" src="./images/whatabook1.png" alt="WhatABook" />
+              <h3>WhatABook</h3>
+              <p>
+                WhatABook, a small used book store has decided to expand their
+                presence by offering customers a solution they can install on
+                their personal computers.
+              </p>
+              <p>WhatABook would like to establish an application that:</p>
+              <ul>
+                <li>allows customers to browse their in-store book listing</li>
+                <li>allows customers to add books to a wishlist</li>
+                <li>allows customers to view their wishlist</li>
+                <li>shows a listing of books by genre,</li>
+                <li>shows a listing of books by author</li>
+                <li>search for book by title</li>
+                <li>search for book by bookId</li>
+              </ul>
+              <p>
+                The interface must be as simplistic as possible, because most of
+                WhatABook’s customers are middle age users with minimal computer
+                experience.
+              </p>
+              <p>Technologies: MongoDB and Python</p>
+              <p>Learned: MongoDB and Python</p>
+
+              <a
+                href="https://github.com/bernicetempleman1/whatabook"
+                class="button-link"
+                target="_blank"
+                >GitHub repo</a
+              >
+            </article>
+          </section>
+        </div>
+      </main>
+
+      <!-- Use the footer area to add webpage footer content-->
+      <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+        <p>
+          <a href="mailto:bernice.templeman1@gmail.com"
+            >bernice.templeman1@gmail.com</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
