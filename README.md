@@ -7,5 +7,10 @@
 <!-- Instructor's name  -->
 * Professor Richard Krasso 
 
-<!-- Student's name -->
-* Bernice Templeman
+<!-- Team Lead -->
+* Bernice Templeman (Team Lead)
+
+<!-- Team Members -->
+  * Sheldon Skaggs
+  * Meher Salim
+  
